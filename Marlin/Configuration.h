@@ -58,9 +58,9 @@
 // 1 ... aluminium heated bed with "BuildTak-like" sticker
 // 2 ... ultrabase heated bed
 #if ENABLED(KNUTWURST_KOSSEL_PLUS)
-   #define KNUTWURST_KOSSEL_ENABLE_BED 2
+    #define KNUTWURST_KOSSEL_ENABLE_BED 1
 #else
-   #define KNUTWURST_KOSSEL_ENABLE_BED 0
+    #define KNUTWURST_KOSSEL_ENABLE_BED 0
 #endif
 
 /**
@@ -174,7 +174,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Knutwurst's Kossel Delta Printer"
+#define CUSTOM_MACHINE_NAME "lhoracek Kossel Delta Printer"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -1405,7 +1405,7 @@
  * For other boards you may need to define FIL_RUNOUT_PIN, FIL_RUNOUT2_PIN, etc.
  * By default the firmware assumes HIGH=FILAMENT PRESENT.
  */
-//#define FILAMENT_RUNOUT_SENSOR
+#define FILAMENT_RUNOUT_SENSOR
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define NUM_RUNOUT_SENSORS   1     // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
   #define FIL_RUNOUT_INVERTING false // Set to true to invert the logic of the sensor.
